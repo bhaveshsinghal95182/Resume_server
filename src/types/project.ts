@@ -5,6 +5,8 @@ export interface Project {
   "project-description": string;
   "meta-tags": MetaTag[];
   "technologies-used": string[];
+  "active-links"?: string;
+  "Backstory"?: string
 }
 
 /* 
