@@ -1,5 +1,6 @@
 import { z } from "zod";
 export const META_TAGS = [
+    "All",
     "AI",
     "Machine Learning",
     "full-stack development",

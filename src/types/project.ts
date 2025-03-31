@@ -1,4 +1,5 @@
 import { MetaTag } from "../constants/meta-tag.js";
+import { z } from "zod";
 
 export interface Project {
   "project-duration": string;
@@ -9,15 +10,18 @@ export interface Project {
   "Backstory"?: string
 }
 
-/* 
- Structure 
+export interface ProjectLatex {
+	"name": string;
+	"technologies": string[];
+	"features": string[]
+}
 
-"Auto-Cide": {
-		"project-duration": "4 months",
-		"project-description": "An online collaborative Code-IDE that helps in pair programming and all",
-		"meta-tags": ["AI", "Sockets", "MERN"],
-		"technologies-used": ["MongoDB", "React", "Node", "Express", "Socket.io", "GeminiAPI"]
-	}
+export const ProjectLatexSchema = z.object({
+  name: z.string(),
+  technologies: z.array(z.string()),
+  features: z.array(z.string())
+});
 
-*/
+export const ProjectsLatexSchema = z.array(ProjectLatexSchema)
+
 export type Projects = Record<string, Project>;

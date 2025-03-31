@@ -121,4 +121,13 @@ export const projectsData: Projects = {
     Backstory:
       "Created a nextjs app for my little sister that helps in reading books because she wasnt able to read all the epub files that were available online because she is a nerd. Also added a light and dark mode in this app to help in reading. App follows neo-minimalistic design approach with subtle dropshadows and colors like pink and blue acc to her taste",
   },
+  "Resume Creator": {
+    "project-duration": "3 days",
+    "project-description":
+      "Created a mcp server that helps in creating resumes while talking to claude just by giving it the job description",
+    "meta-tags": ["backend development", "AI", "full-stack development"],
+    "technologies-used": ["MCP", "Claude", "typescript"],
+    Backstory:
+      "I saw some HR interview where they said each job has some specific keywords in job description that makes it easier to filter out resumes based on  them so i thought why not make an automation that helps in creating a resume each time I paste a new job description in claude."
+    }
 };
